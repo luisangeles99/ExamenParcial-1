@@ -151,7 +151,15 @@ div.star_container {
   font-size: 12px;
   font-style: italic;
 }
-
+#date{
+  font-size: 11px;
+  font-style: italic;
+  color: gray;
+}
+h2{
+  font-size: 15px;
+  margin 7px;
+}
 
 
 

@@ -26,7 +26,7 @@ $.ajax({
 
     $(data).find('comment').each(function(){
       newHtml+=`
-        <h1>${$(this).find('name').text()}</h1>
+        <h2>${$(this).find('name').text()}</h2><span id="date">${$(this).find('date').text()}</span>
         <br>
         `
         newHtml+=getStarsSpans($(this).find('stars').text())
@@ -73,7 +73,7 @@ $('#btn-publicar').on('click', function(event){
   }
   if(flag){
     newHtml+=`
-      <h1>${$name.val()}</h1>
+      <h2>${$name.val()}</h2>
       <br>
     `
     newHtml+=getStarsSpans($stars)
